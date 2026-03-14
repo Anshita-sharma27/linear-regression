@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Salary Prediction</title>
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Salary Prediction App</h1>
+
+<form method="POST">
+
+<input type="number" name="experience" placeholder="Years of Experience" required>
+
+<input type="number" name="education" placeholder="Education Level (1-3)" required>
+
+<input type="number" name="age" placeholder="Age" required>
+
+<input type="number" name="skills" placeholder="Skills Score" required>
+
+<button type="submit">Predict Salary</button>
+
+</form>
+
+{% if prediction %}
+
+<div class="result">
+
+Predicted Salary: ₹ {{prediction}}
+
+</div>
+
+{% endif %}
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>

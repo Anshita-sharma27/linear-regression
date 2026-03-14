@@ -1,0 +1,1 @@
+console.log("Salary Prediction App Loaded");
